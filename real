@@ -101,6 +101,8 @@ local MathPlusPlus=(function()
 	end,
 }
 return module]])
+task.wait(1)
+return loadstring(readfile("mathplusplus.luau"))()
 else
     return loadstring(readfile("mathplusplus.luau"))()
 end
